@@ -16,15 +16,15 @@ const Share = () => {
               <span className="shareOptionText">Photo or Video</span>
             </div>
             <div className="shareOption">
-              <i className="fas fa-photo-video shareIcon"></i>
+              <i class="fas fa-tag shareIcon"></i>
               <span className="shareOptionText">Photo or Video</span>
             </div>
             <div className="shareOption">
-              <i className="fas fa-photo-video shareIcon"></i>
+            <i class="fas fa-map-marker-alt shareIcon"></i>
               <span className="shareOptionText">Photo or Video</span>
             </div>
             <div className="shareOption">
-              <i className="fas fa-photo-video shareIcon"></i>
+              <i class="fas fa-grin shareIcon"></i>
               <span className="shareOptionText">Photo or Video</span>
             </div>
           </div>
