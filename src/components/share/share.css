@@ -55,3 +55,35 @@
   font-size: 18px;
   margin-right: 5px;
 }
+
+.shareOptionText {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.fa-photo-video {
+  color: #d83636;
+}
+
+.fa-tag {
+  color: blue;
+}
+
+.fa-map-marker-alt {
+  color: green;
+}
+
+.fa-grin {
+  color: #c2c201;
+}
+
+.shareBtn {
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: green;
+  font-weight: 500;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #fff;
+}

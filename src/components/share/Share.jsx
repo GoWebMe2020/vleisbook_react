@@ -28,6 +28,7 @@ const Share = () => {
               <span className="shareOptionText">Photo or Video</span>
             </div>
           </div>
+          <button className="shareBtn">Share</button>
         </div>
       </div>
     </div>
