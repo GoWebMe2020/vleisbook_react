@@ -6,9 +6,9 @@ const Share = () => {
       <div className="shareWrapper">
         <div className="shareTop">
           <img src="/assets/person/pp1.jpg" className="shareProfilePicture" alt="" />
-          <input placeholder="What's on your mind JP?" className="shareInput"/>
+          <input placeholder="What's on your mind JP?" className="shareInput" />
         </div>
-        <hr className="shareHr"/>
+        <hr className="shareHr" />
         <div className="shareBottom">
           <div className="shareOptions">
             <div className="shareOption">
@@ -16,15 +16,15 @@ const Share = () => {
               <span className="shareOptionText">Photo or Video</span>
             </div>
             <div className="shareOption">
-              <i class="fas fa-tag shareIcon"></i>
+              <i className="fas fa-tag shareIcon"></i>
               <span className="shareOptionText">Photo or Video</span>
             </div>
             <div className="shareOption">
-            <i class="fas fa-map-marker-alt shareIcon"></i>
+              <i className="fas fa-map-marker-alt shareIcon"></i>
               <span className="shareOptionText">Photo or Video</span>
             </div>
             <div className="shareOption">
-              <i class="fas fa-grin shareIcon"></i>
+              <i className="fas fa-grin shareIcon"></i>
               <span className="shareOptionText">Photo or Video</span>
             </div>
           </div>

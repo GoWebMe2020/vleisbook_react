@@ -8,8 +8,8 @@ const Topbar = () => {
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
-          <i class="fas fa-search"></i>
-          <input placeholder="Search for ..." className="searchInput"/>
+          <i className="fas fa-search"></i>
+          <input placeholder="Search for ..." className="searchInput" />
         </div>
       </div>
       <div className="topbarRight">
@@ -19,16 +19,16 @@ const Topbar = () => {
         </div>
         <div className="topbarIcons">
           <div className="topbarIconItem">
-          <i class="fas fa-user"></i>
-          <span className="topbarIconBadge">1</span>
+            <i className="fas fa-user"></i>
+            <span className="topbarIconBadge">1</span>
           </div>
           <div className="topbarIconItem">
-          <i class="fas fa-comment-dots"></i>
-          <span className="topbarIconBadge">3</span>
+            <i className="fas fa-comment-dots"></i>
+            <span className="topbarIconBadge">3</span>
           </div>
           <div className="topbarIconItem">
-          <i class="fas fa-bell"></i>
-          <span className="topbarIconBadge">1</span>
+            <i className="fas fa-bell"></i>
+            <span className="topbarIconBadge">1</span>
           </div>
         </div>
         <img src="/assets/person/pp1.jpg" alt="" className="topbarImg" />

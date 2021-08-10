@@ -1,31 +1,41 @@
 import './post.css'
+import { Users } from "../../dummyData"
+import { useState } from "react"
 
-export default function Post() {
+export default function Post({ post }) {
+  const [likes, setLikes] = useState(post.likes)
+  const [isLiked, setIsLiked] = useState(false)
+
+  const likeHandler = () => {
+    setLikes(isLiked ? likes - 1 : likes + 1)
+    setIsLiked(!isLiked)
+  }
+
   return (
     <div className="post">
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
-            <img className="postProfilePicture"  src="/assets/person/pp3.jpg" alt="" />
-            <span className="postUsername">Genevieve Stone</span>
-            <span className="postDate">5 min ago</span>
+            <img className="postProfilePicture" src={Users.filter((u) => u.id === post.userId)[0].profilePicture} alt="" />
+            <span className="postUsername">{Users.filter((u) => u.id === post.userId)[0].username}</span>
+            <span className="postDate">{post.date}</span>
           </div>
           <div className="postTopRight">
-          <i class="fas fa-ellipsis-v"></i>
+            <i className="fas fa-ellipsis-v"></i>
           </div>
         </div>
         <div className="postCenter">
-          <span className="postText">Hey! This is amazing. This is my first post on VleisBook!!!</span>
-          <img className="postImg" src="/assets/posts/post1.jpg" alt="" />
+          <span className="postText">{post?.desc}</span>
+          <img className="postImg" src={post.img} alt="" />
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
-            <div className="postLikeIconBorder"><i class="far fa-thumbs-up likeIcon"></i></div>
-            <div className="postHeartIconBorder"><i class="fas fa-heart likeIcon"></i></div>
-            <span className="postLikeCounter">21 like it</span>
+            <div className="postLikeIconBorder" onClick={likeHandler}><i className="far fa-thumbs-up likeIcon"></i></div>
+            <div className="postHeartIconBorder" onClick={likeHandler}><i className="fas fa-heart likeIcon"></i></div>
+            <span className="postLikeCounter">{likes} like it</span>
           </div>
           <div className="postBottomRight">
-            <span className="postCommentText">9 comments</span>
+            <span className="postCommentText">{post.comments} comments</span>
           </div>
         </div>
       </div>
