@@ -74,3 +74,7 @@ export const Posts = [
     comments: 6
   },
 ]
+
+// Part one - https://www.youtube.com/watch?v=ldGl6L4Vktk
+// Part Two - https://youtu.be/zM93yZ_8SvE
+// Part Three -  https://youtu.be/pFHyZvVxce0
